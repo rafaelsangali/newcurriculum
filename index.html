@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <header>
+            <nav class="list">
+                <p><a href="https://github.com/rafaelsangali" target="_blank">Github</a></p>
+                <p><a href="https://www.linkedin.com/in/rafael-lombardi-0b2675229/" target="_blank">Linkedin</a></p>
+                <p><a href="https://wa.me/16991329998" target="_blank">Whatsapp</a></p>
+            </nav>
+
+    </header>
+    <main>
+        <section>
+            <div class="content">
+                <img id="img" src="./images/profile-pic.png" alt="Foto Rafael">
+                <h1 class="name">Rafael Sangali</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="animation" class="arrow">
+                <img class="walking"src="./images/arrow.png" alt="Foto seta">
+                     
+            </div>
+
+            <div style="display: none;" id="about">
+                <p class="active" id="about1">  Opa sou Rafael, mas pode me chamar de Rafa <br>
+                    Essa é a parte que falo um pouco sobre mim.
+                    Sou um cara que gosta de ouvi todo o tipo de música, adora esportes, games, mas acho que querem saber como entrei na tecnologia, vamos lá. <br>
+                    Começei nessa area de tecnologia por conta do meu avô hahaha, mas é verdade, ele tem um negócio onde vende peças automotivas e colocar online. Então na tentativa de ajuda-lo comecei a pesquisar como se fazia um site, estudei sobre wordpress, mas oque me chamou a atenção e abriu um brilho em meus olhos foi na programação, que por conta própria comecei a aprender. E com vontade de ir mais além, conhecer pessoas da area e fazer amigos, entrei na Gama Academy, e a partir já sabem o resto XD.</p>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById("animation");
+            arrow.classList.toggle("rotate");
+            var showup = document.getElementById("about");
+            showup.classList.toggle("active");
+        }
+
+    </script>
+    
+</body>
+</html>
